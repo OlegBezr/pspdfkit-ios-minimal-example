@@ -15,6 +15,7 @@
 		78DE04F319567F64006CB968 /* PDFSimpleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78DE04F219567F64006CB968 /* PDFSimpleViewController.swift */; };
 		78F5DBA81A34EE220082A710 /* LibraryExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F5DBA71A34EE220082A710 /* LibraryExample.swift */; };
 		A615FACF036EA8A143D7DA53 /* PSPDFKit in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C213D3C38F328ACEC6C2F9E /* PSPDFKit */; productRef = 2ECD805C19BE054FCD290FE0 /* PSPDFKit */; };
+		AAF23C522D9C6FCD00C4071E /* AnnotationTextControls.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF23C512D9C6FC800C4071E /* AnnotationTextControls.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -34,13 +35,14 @@
 		3A5B94B1270DCE3A00E512DA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		655A38C41D93F7D800EBEF62 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		655A38C81D93F8C400EBEF62 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		6C213D3C38F328ACEC6C2F9E /* PSPDFKit */ = {isa = PBXFileReference; includeInIndex = 1; path = PSPDFKit; sourceTree = SOURCE_ROOT; };
+		6C213D3C38F328ACEC6C2F9E /* PSPDFKit */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = PSPDFKit; sourceTree = SOURCE_ROOT; };
 		78DE043619563B73006CB968 /* Minimal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Minimal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78DE043A19563B73006CB968 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		78DE043B19563B73006CB968 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		78DE04F219567F64006CB968 /* PDFSimpleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDFSimpleViewController.swift; sourceTree = "<group>"; };
 		78F5DBA71A34EE220082A710 /* LibraryExample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LibraryExample.swift; sourceTree = "<group>"; };
-		F8DBC48CB80DF7D179594A46 /* Samples */ = {isa = PBXFileReference; includeInIndex = 1; path = Samples; sourceTree = "<group>"; };
+		AAF23C512D9C6FC800C4071E /* AnnotationTextControls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnotationTextControls.swift; sourceTree = "<group>"; };
+		F8DBC48CB80DF7D179594A46 /* Samples */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = Samples; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +78,7 @@
 		78DE043819563B73006CB968 /* Minimal */ = {
 			isa = PBXGroup;
 			children = (
+				AAF23C512D9C6FC800C4071E /* AnnotationTextControls.swift */,
 				78DE043B19563B73006CB968 /* AppDelegate.swift */,
 				3A5B94B1270DCE3A00E512DA /* SceneDelegate.swift */,
 				78DE04F219567F64006CB968 /* PDFSimpleViewController.swift */,
@@ -182,6 +185,7 @@
 			files = (
 				78DE043C19563B73006CB968 /* AppDelegate.swift in Sources */,
 				78DE04F319567F64006CB968 /* PDFSimpleViewController.swift in Sources */,
+				AAF23C522D9C6FCD00C4071E /* AnnotationTextControls.swift in Sources */,
 				78F5DBA81A34EE220082A710 /* LibraryExample.swift in Sources */,
 				3A5B94B2270DCE3A00E512DA /* SceneDelegate.swift in Sources */,
 			);
@@ -297,13 +301,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_OBJC_WEAK = YES;
+				DEVELOPMENT_TEAM = 63NK2344DF;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = Minimal/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.pspdfkit.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pspdfkit.atlas;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -313,13 +318,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_OBJC_WEAK = YES;
+				DEVELOPMENT_TEAM = 63NK2344DF;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = Minimal/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.pspdfkit.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pspdfkit.atlas;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

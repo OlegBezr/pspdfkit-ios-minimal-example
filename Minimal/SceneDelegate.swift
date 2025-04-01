@@ -18,12 +18,14 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             return
         }
 
-        let fileURL = Bundle.main.url(forResource: "PSPDFKit 14 Quickstart Guide", withExtension: "pdf", subdirectory: "Samples")!
+        let fileURL = Bundle.main.url(forResource: "About PSPDFKit", withExtension: "pdf", subdirectory: "Samples")!
         let writableURL = copyFileURLToDocumentFolder(fileURL)
         let document = Document(url: writableURL)
 
         let pdfController = PDFSimpleViewController(document: document) { builder in
             builder.thumbnailBarMode = .scrollable
+            builder.overrideClass(FreeTextAnnotationView.self, with: AnnotationTextControls.self)
+            builder.freeTextAccessoryViewEnabled = false
         }
 
         let window = UIWindow(windowScene: windowScene)
